@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Hiệu ứng header */
+header {
+    background: linear-gradient(135deg, #0073e6, #00c6ff);
+    color: white;
+    padding: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Ảnh đại diện */
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng section */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Hiệu ứng danh sách kỹ năng */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    padding: 8px;
+    background: #0073e6;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #005bb5;
+}
+
+/* Hiệu ứng cho liên kết */
+a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Hiệu ứng fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
